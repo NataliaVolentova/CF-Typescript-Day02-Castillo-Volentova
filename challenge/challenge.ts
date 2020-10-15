@@ -32,8 +32,9 @@ let hannes  = new Person("live simply", "Hannes Cerry", 29, "Vienna");
 
 let btn = document.getElementsByClassName("btn");
 
+//
 for (let i in persArry){
-    btn.addEventListener("click", function(){
+    btn[i].addEventListener("click", function(){
       document.getElementsByClassName("imagetext")[i].innerHTML += persArry[i].clickImg();  
 
     })

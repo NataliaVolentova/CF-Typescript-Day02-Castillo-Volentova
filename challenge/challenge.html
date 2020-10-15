@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">   
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
     
     <!--to turn on the responsive feature of a webpage
@@ -32,31 +36,70 @@
         width: 600px;
         height: 300px;
         }
+        body{
+            background-color: lightgreen;
+        }
     </style>
 
 </head>
 
 
 <body>
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+        <a class="animate__animated animate__heartBeat navbar-brand" href="#">Date me</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav mr-sm-2 ">
+            <a class="nav-link active my-2 my-sm-0 animate__animated animate__backInDown" href="#">Dates <span class="sr-only">(current)</span></a>
+            <a class="nav-link animate__animated animate__backInDown" href="#">Contact</a>
+            <a class="nav-link animate__animated animate__backInDown" href="#">About</a>
+            <a class="nav-link disabled animate__animated animate__backInDown" href="#" tabindex="-1" aria-disabled="true">Settings</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--div with pictures-->
+    <div class="container">
+        <div class="row">
+            <div class="imagetext">
+
+            </div>
+
+        </div>
+    
+    </div>
 
     <!-- Slider main container -->
 <div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 1
+            <button class="btn bg-dark text-white">Like</button>
+        </div>
+        <div class="swiper-slide">Slide 2
+            <button class="btn bg-dark text-white">Like</button>
+        </div>
+        <div class="swiper-slide">Slide 3
+            <button class="btn bg-dark text-white">Like</button>
+        </div>
         ...
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+       <!--favourite div-->
+       <div class="container-fluid bg-primary text-center">
+        <h1>Favourites</h1>
+    </div>
+    <!-- If we need pagination--> 
+   <div class="swiper-pagination"></div>
 
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 
-    <!-- If we need scrollbar -->
+    <!-- If we need scrollbar-->
     <div class="swiper-scrollbar"></div>
 </div>
 
